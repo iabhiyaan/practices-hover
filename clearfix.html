@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clearfix</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 300px;
+            height: 300px;
+            outline: 1px solid black;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        .box--red {
+            background: red;
+            float: left;
+        }
+
+        .box--blue {
+            background: blue;
+            float: right;
+        }
+
+        .box--green {
+            background: green;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box--red"></div>
+    <div class="box box--blue"></div>
+    
+    <div class="box box--green"></div>
+    <div class="clearfix"></div>
+    <div class="box box--red"></div>
+    <div class="box box--blue"></div>
+    
+    <div class="box box--green"></div>
+    <div class="clearfix"></div>
+</body>
+</html>

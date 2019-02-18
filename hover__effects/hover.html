@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .abc {
+            height: 650px;
+            background: linear-gradient(rgba(255, 0, 0, 0.384),rgba(0, 128, 0, 0.479)), url('img/download.jpg');
+            position: relative;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+
+        .abc::after {
+            content: '';
+            width: 109%;
+            height: 194px;
+            background: white;
+            bottom: -178px;
+            left: -31px;
+            position: absolute;
+            transform: rotate(11deg);
+        }
+
+        .abc::before {
+            content: '';
+            width: 109%;
+            height: 194px;
+            background: white;
+            bottom: -77px;
+            left: -30px;
+            position: absolute;
+            transform: rotate(-7deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="abc">
+
+    </div>
+</body>
+
+</html>

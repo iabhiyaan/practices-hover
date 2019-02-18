@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .shape-divider {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            background: #fff
+        }
+
+        .shape-divider::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: #d17272;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform-origin: top left;
+            transform: skewY(-20deg);
+        }
+
+        
+        /* .shape-divider--1 {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            position: relative;
+            background:  #fff
+        }
+
+        .shape-divider--1::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #6868e4;
+            transform-origin: bottom left;
+            transform: skewY(14deg);
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="shape-divider"></div>
+    <div class="shape-divider--1"></div>
+</body>
+
+</html>

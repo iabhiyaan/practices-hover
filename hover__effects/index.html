@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .clearfix {
+            clear: both;
+        }
+
+        body {
+            background: rgb(216, 97, 97);
+            
+        }
+
+        section {
+            width: 80%;
+            height: 600px;
+            margin: auto;
+        }
+
+        .content {
+            background: url('img/download.jpg') #cea65d;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        p {
+            width: 50%;
+            height: 600px;
+            background: #f1bb55;
+            position: relative;
+            z-index: 4;
+        }
+
+        p::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #f1bb55;
+            transform-origin: top left;
+            transform: skewX(15deg);
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="content">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores consectetur eum iusto eligendi dicta et expedita vitae quis, rem aut hic repudiandae tenetur voluptatem impedit? Officia quidem fugiat veniam corporis.</p>
+        </div>
+    </section>
+    <div class="clearfix"></div>
+</body>
+
+</html>

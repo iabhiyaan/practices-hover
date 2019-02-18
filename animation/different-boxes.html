@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+         @keyframes example {
+        0% {
+            top: 0;
+            left: 0;
+        }
+        25% {
+            top: 0;
+            left: 50%;
+        }
+        50% {
+            top: 50%;
+            left: 50%;
+        }
+        75% {
+            top: 50%;
+            left: 0;
+        }
+        100% {
+            top: 0;
+            left: 0;
+        }
+
+    }
+        .box {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            background: #ff7979;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

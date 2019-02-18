@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    /*align:center;*/
+    margin-top: 60px;
+}
+
+.btn {
+    border: 1px solid #3498db;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden
+}
+
+.btn:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: #3498db;
+    z-index: -9;
+    transition: 0.8s;
+}
+
+
+.btn1,
+.btn2 {
+    color: #3498db;
+}
+
+.btn3,
+.btn4 {
+    color: #fff;
+}
+
+.btn1:hover,
+.btn2:hover {
+    color: #fff;
+}
+
+.btn3:hover,
+.btn4:hover {
+    color: #3498db;
+}
+
+.btn1::before,
+.btn3::before {
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+
+.btn2::before,
+.btn4::before {
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+
+.btn3::before,
+.btn4::before {
+    height: 180%;
+}
+
+.btn1:hover::before,
+.btn2:hover::before {
+    height: 180%
+}
+
+.btn3:hover::before,
+.btn4:hover::before {
+    height: 0%;
+}
+
+
+.container1 {
+    margin-top: 20px;
+}
+
+.btns {
+    border: 1px solid #30336b;
+    padding: 10px 20px;
+    background: none;
+    position: relative;
+    overflow: hidden;
+    transition: 0.8s;
+    margin: 10px;
+    font-size: 20px
+}
+
+.btns:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #130f40;
+    z-index: -9;
+    transition: 0.8s;
+}
+
+
+.btna,
+.btnb {
+    color: #130f40;
+}
+
+.btnc,
+.btnd {
+    color: #fff;
+}
+
+.btna:hover,
+.btnb:hover {
+    color: #fff;
+}
+
+.btnc:hover,
+.btnd:hover {
+    color: #130f40;
+}
+
+.btna::before {
+    right: 0;
+    top: 0;
+    border-radius: 50% 0 0 50%;
+}
+
+.btnb::before {
+    left: 0;
+    top: 0;
+    border-radius: 0 50% 50% 0;
+}
+
+
+.btna:hover::before,
+.btnb:hover::before {
+    width: 180%;
+}
+
+.btnd:hover::before {
+    width: 0%;
+}
+
+.btnd::before {
+    width: 180%;
+    right: 0;
+    top: 0;
+    border-radius: 50% 0 0 50%;
+}
+
+.btnd:hover::before {
+    width: 0%;
+}
+
+.btnc::before {
+    width: 180%;
+    left: 0;
+    top: 0;
+    border-radius: 0 50% 50% 0;
+}
+
+.btnc:hover::before {
+    width: 0%;
+}
